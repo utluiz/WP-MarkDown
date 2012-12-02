@@ -289,21 +289,25 @@ class WordPress_Markdown {
 	*/
 	function pre_textarea_prettify_bbpress_reply(){
 		if($this->is_Markdownable('reply')){
+			add_filter('bbp_use_wp_editor','__return_false');
 			echo self::pre_textarea_prettify('bbp_reply_content');
 		}
 	}
 	function post_textarea_prettify_bbpress_reply(){
 		if($this->is_Markdownable('reply')){
+			add_filter('bbp_use_wp_editor','__return_false');
 			echo self::post_textarea_prettify('bbp_reply_content');
 		}
 	}
 	function pre_textarea_prettify_bbpress_topic(){
 		if($this->is_Markdownable('topic')){
+			add_filter('bbp_use_wp_editor','__return_false');
 			echo self::pre_textarea_prettify('bbp_topic_content');
 		}
 	}
 	function post_textarea_prettify_bbpress_topic(){
 		if($this->is_Markdownable('topic')){
+			add_filter('bbp_use_wp_editor','__return_false');
 			echo self::post_textarea_prettify('bbp_topic_content');
 		}
 	}
