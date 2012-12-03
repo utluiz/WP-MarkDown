@@ -407,6 +407,16 @@ class WordPress_Markdown {
 	}
 }
 
+	function wpmarkdown_html_to_markdown( $content ){
+		$md = new Markdownify_Extra;
+		$content = $md->parseString($content);
+		return $content;
+	}
+
+	function wpmarkdown_markdown_to_html( $content ){
+		return Markdown($content );
+	}
+
 require_once( dirname( __FILE__) . '/markdown-extra.php' );
 require_once( dirname( __FILE__) . '/markdownify/markdownify.php' );
 require_once( dirname( __FILE__) . '/markdownify/markdownify_extra.php' );
