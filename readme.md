@@ -1,4 +1,4 @@
-# WP-Markdown #
+# My WP-Markdown #
 **Contributors:** stephenharris  
 **Donate link:** http://www.stephenharris.info  
 **Tags:** markdown, formatting,prettify,syntax highlighter,code  

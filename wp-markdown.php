@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: WP-Markdown
+Plugin Name: My-WP-Markdown
 Description: Allows you to use MarkDown in posts, BBPress forums and comments
 Version: 1.6.0-a
 Author: Stephen Harris
@@ -24,7 +24,7 @@ Author URI: http://stephenharris.info
 */
 class WordPress_Markdown {
 
-	static $domain = 'markdown';
+	static $domain = 'mymarkdown';
 
 	//Version
 	static $version = '1.6.0-a';
@@ -421,7 +421,7 @@ class WordPress_Markdown {
 	}
 	static function post_textarea_prettify($id=""){
 		$id = esc_attr($id);
-       	 return "<div id='wmd-preview{$id}' class='wmd-panel wmd-preview prettyprint'></div></div>";
+      	return "<div id='wmd-preview{$id}' class='wmd-panel wmd-preview prettyprint'></div></div>";
 	}
 
 	/*
