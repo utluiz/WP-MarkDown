@@ -57,7 +57,7 @@ module.exports = function(grunt) {
 	
 	clean: {
 		//Clean up build folder
-		main: ['build/wp-markdown']
+		main: ['build/my-wp-markdown']
 	},
 
 	copy: {
@@ -75,7 +75,7 @@ module.exports = function(grunt) {
 				'!composer.lock','!composer.phar','!composer.json',
 				'!CONTRIBUTING.md'
 			],
-			dest: 'build/wp-markdown/'
+			dest: 'build/my-wp-markdown/'
 		},
 	},
 	
@@ -93,8 +93,8 @@ module.exports = function(grunt) {
     	deploy:{
             options: {
         		svn_user: 'stephenharris',
-        		plugin_slug: 'wp-markdown',
-        		build_dir: 'build/wp-markdown/'
+        		plugin_slug: 'my-wp-markdown',
+        		build_dir: 'build/my-wp-markdown/'
             },
     	}
     },
@@ -108,7 +108,7 @@ module.exports = function(grunt) {
 
     pot: {
     	options:{
-        	text_domain: 'wp-markdown',
+        	text_domain: 'my-wp-markdown',
         	dest: 'languages/',
 			keywords: ['__:1',
 			           '_e:1',
@@ -141,7 +141,7 @@ module.exports = function(grunt) {
 
     checktextdomain: {
     	options:{
-			text_domain: 'wp-markdown',
+			text_domain: 'my-wp-markdown',
 			correct_domain: true,
 			keywords: ['__:1,2d',
 			           '_e:1,2d',
